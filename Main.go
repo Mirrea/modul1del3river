@@ -1,3 +1,9 @@
 package del3
 
-// "Dette er en beskjed"
+import (
+	"fmt"
+)
+
+func main() {
+	fmt.Println("hei")
+}
