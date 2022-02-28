@@ -12,3 +12,11 @@ func TestViewState(t *testing.T) {
 		t.Errorf("Feil, fikk %q, ønsket %q.", state, wanted)
 	}
 }
+
+func TestPutKyllingInBoat(t *testing.T) {
+	wanted := "[rev korn hs---\\ \\__kylling__/ _________________/---]"
+	state := PutKyllingInBoat()
+	if state != wanted {
+		t.Errorf("Feil, fikk %q, ønsket %q.", state, wanted)
+	}
+}
